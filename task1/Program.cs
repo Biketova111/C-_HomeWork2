@@ -14,5 +14,5 @@ int GetNumber(string message)
 }
 
 int number = GetNumber("Введите трехзначное число: ");
-int secondDigit = number/10 - (number/100*10);
+int secondDigit = number%100/10; 
 Console.WriteLine(secondDigit);
